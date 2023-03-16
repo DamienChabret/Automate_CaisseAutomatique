@@ -62,3 +62,35 @@ T:\INFO-DIJ\!CommunROnlyBUT2\Semestre 4\R4.A.12 - Automates et langages\TP2\Cais
 T:\INFO-DIJ\!CommunROnlyBUT2\Semestre 4\R4.A.12 - Automates et langages\TP2\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\ref\CaisseAutomatique.dll
 T:\INFO-DIJ\!CommunROnlyBUT2\Semestre 4\R4.A.12 - Automates et langages\TP2\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique.pdb
 T:\INFO-DIJ\!CommunROnlyBUT2\Semestre 4\R4.A.12 - Automates et langages\TP2\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique.genruntimeconfig.cache
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique.csproj.AssemblyReference.cache
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\Vue\EcranAdministration.g.cs
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\Vue\EcranSelectionQuantite.g.cs
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\Vue\MainWindow.g.cs
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique_Content.g.cs
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique_MarkupCompile.cache
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique_MarkupCompile.lref
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\Vue\EcranAdministration.baml
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\Vue\EcranSelectionQuantite.baml
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\Vue\MainWindow.baml
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique.g.resources
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique.AssemblyInfoInputs.cache
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique.AssemblyInfo.cs
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique.csproj.CoreCompileInputs.cache
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\refint\CaisseAutomatique.dll
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique.pdb
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\bin\Debug\net6.0-windows\CaisseAutomatique.exe
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\bin\Debug\net6.0-windows\Vue\Ressources\Caisse2.png
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\bin\Debug\net6.0-windows\Vue\Ressources\Chips.png
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\bin\Debug\net6.0-windows\Vue\Ressources\Coca.png
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\bin\Debug\net6.0-windows\Vue\Ressources\Lait.png
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\bin\Debug\net6.0-windows\Vue\Ressources\Miel.png
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\bin\Debug\net6.0-windows\Vue\Ressources\Pates.png
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\bin\Debug\net6.0-windows\CaisseAutomatique.deps.json
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\bin\Debug\net6.0-windows\CaisseAutomatique.runtimeconfig.json
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\bin\Debug\net6.0-windows\CaisseAutomatique.dll
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\bin\Debug\net6.0-windows\CaisseAutomatique.pdb
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique.dll
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\CaisseAutomatique.genruntimeconfig.cache
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\ref\CaisseAutomatique.dll
