@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-T:\INFO-DIJ\!CommunROnlyBUT2\Semestre 4\R4.A.12 - Automates et langages\TP2\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\obj\Debug\net6.0-windows\
 CaisseAutomatique
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-T:\INFO-DIJ\!CommunROnlyBUT2\Semestre 4\R4.A.12 - Automates et langages\TP2\CaisseAutomatique\CaisseAutomatique\App.xaml
+C:\Users\Damien\Documents\COURS\Automate\Automate_CaisseAutomatique\CaisseAutomatique\CaisseAutomatique\App.xaml
 3-1344483414
 6-987900836
-191600664635
-1941769180620
+241397340027
+194237474483
 Vue\EcranAdministration.xaml;Vue\EcranSelectionQuantite.xaml;Vue\MainWindow.xaml;
 
 False

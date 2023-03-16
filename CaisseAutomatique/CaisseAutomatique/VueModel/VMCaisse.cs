@@ -1,6 +1,7 @@
 ﻿using CaisseAutomatique.Model;
 using CaisseAutomatique.Model.Articles;
 using CaisseAutomatique.Model.Articles.Realisations;
+using CaisseAutomatique.Model.Automate;
 using CaisseAutomatique.Vue;
 using System;
 using System.Collections.ObjectModel;
@@ -14,6 +15,11 @@ namespace CaisseAutomatique.VueModel
     /// </summary>
     public class VMCaisse
     {
+        /// <summary>
+        /// Automate
+        /// </summary>
+        private Automate automate;
+
         /// <summary>
         /// La caisse automatique (couche métier)
         /// </summary>
@@ -49,6 +55,7 @@ namespace CaisseAutomatique.VueModel
             this.metier.PropertyChanged += Metier_PropertyChanged;
             this.articles = new ObservableCollection<Article>();
             this.AjouterLigneTotalEtResteAPayer();
+            this.automate = new Automate(this.metier);
         }
 
         /// <summary>
