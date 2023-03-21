@@ -11,6 +11,10 @@ namespace CaisseAutomatique.Model.Automate
     /// </summary>
     public enum Evenement
     {
-
+        SCANNER,
+        POSER,
+        PAYER,
+        RESET,
+        ENLEVER
     }
 }

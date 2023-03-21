@@ -62,6 +62,7 @@ namespace CaisseAutomatique.VueModel
             this.articles = new ObservableCollection<Article>();
             this.AjouterLigneTotalEtResteAPayer();
             this.automate = new Automate(this.metier);
+            this.automate.PropertyChanged += Automate_PropertyChanged;
         }
 
         /// <summary>
@@ -125,6 +126,8 @@ namespace CaisseAutomatique.VueModel
         /// <param name="vueArticle">Vue de l'article scanné</param>
         public void PasseUnArticleDevantLeScannair(VueArticle vueArticle)
         {
+            this.metier.ScanArticle(vueArticle.Article);
+            this.automate.Activer(Evenement.SCANNER);
         }
 
         /// <summary>
@@ -133,6 +136,8 @@ namespace CaisseAutomatique.VueModel
         /// <param name="vueArticle">Vue de l'article posé sur la balance</param>
         public void PoseUnArticleSurLaBalance(VueArticle vueArticle)
         {
+            this.metier.AddArticle(vueArticle.Article);
+            this.automate.Activer(Evenement.POSER);   
         }
 
         /// <summary>
@@ -141,6 +146,8 @@ namespace CaisseAutomatique.VueModel
         /// <param name="vueArticle">Vue de l'article enlevé de la balance</param>
         public void EnleveUnArticleDeLaBalance(VueArticle vueArticle)
         {
+            this.metier.RemoveArticle(vueArticle.Article);
+            this.automate.Activer(Evenement.ENLEVER);
         }
 
         /// <summary>
@@ -157,6 +164,7 @@ namespace CaisseAutomatique.VueModel
         /// </summary>
         public void Paye()
         {
+            this.automate.Activer(Evenement.PAYER);
         }
 
         /// <summary>

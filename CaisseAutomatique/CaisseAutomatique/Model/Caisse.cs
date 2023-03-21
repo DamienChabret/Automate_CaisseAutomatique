@@ -102,6 +102,57 @@ namespace CaisseAutomatique.Model
         }
 
         /// <summary>
+        /// Met à jour la caisse
+        /// </summary>
+        public void ResetProduit()
+        {
+            // Si plus d'un produits
+            if(this.articles.Count > 0)
+            {
+                this.articles.Clear();
+                this.NotifyPropertyChanged("Articles");
+            }
+            
+        }
+
+        /// <summary>
+        /// Reset tout
+        /// </summary>
+        public void Reset()
+        {
+            this.articles = new List<Article>();
+            this.dernierArticleScanne = null;
+            this.poidsBalance = 0;
+            this.sommePayee = 0;
+            this.NotifyPropertyChanged("Reset");
+        }
+
+        /// <summary>
+        /// Ajoute un articles
+        /// </summary>
+        public void AddArticle(Article article)
+        {
+            this.poidsBalance = this.poidsBalance + article.Poids;
+        }
+
+        /// <summary>
+        /// Enlève un article
+        /// </summary>
+        public void RemoveArticle(Article article)
+        {
+            this.poidsBalance = this.PoidsBalance - article.Poids;
+        }
+
+        /// <summary>
+        /// Enregistre un article
+        /// </summary>
+        public void RegisterArticle()
+        {
+            this.articles.Add(this.DernierArticleScanne);
+            this.NotifyPropertyChanged("Articles");
+        }
+
+        /// <summary>
         /// Pattern d'observable
         /// </summary>
         public event PropertyChangedEventHandler? PropertyChanged;

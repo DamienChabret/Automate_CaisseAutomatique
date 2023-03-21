@@ -30,12 +30,22 @@ namespace CaisseAutomatique.Model.Automate
         private Caisse metier;
 
         /// <summary>
+        /// Automate
+        /// </summary>
+        private Automate automate;
+        public Automate Automate
+        {
+            get => automate;
+        }
+
+        /// <summary>
         /// Constructeur naturelle de l'état
         /// </summary>
         /// <param name="metier"> caisse</param>
-        public Etat(Caisse metier)
+        public Etat(Caisse metier, Automate automate)
         {
             this.metier = metier;
+            this.automate = automate;
         }
 
         /// <summary>

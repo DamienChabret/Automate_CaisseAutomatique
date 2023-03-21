@@ -10,16 +10,28 @@ namespace CaisseAutomatique.Model.Automate.Etats
     {
         public override string Message => "Bonjour, scannez votre premier article !";
 
-        public EtatAttenteClient(Caisse metier) : base(metier) { }
+        public EtatAttenteClient(Caisse metier, Automate automate) : base(metier, automate) { }
 
         public override void Action(Evenement e)
         {
-            // no-op
+            switch (e)
+            {
+                case Evenement.SCANNER:
+                    this.Metier.RegisterArticle();
+                    break;
+            }
         }
 
         public override Etat Transition(Evenement e)
         {
-            return new EtatAttenteClient(this.Metier);
+            Etat etat = this;
+            switch (e)
+            {
+                case Evenement.SCANNER:
+                    etat = new EtatAttenteProduit(this.Metier, this.Automate);
+                    break;
+            }
+            return etat;
         }
     }
 }

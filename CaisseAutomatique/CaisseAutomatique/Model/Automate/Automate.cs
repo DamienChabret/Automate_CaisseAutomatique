@@ -29,13 +29,14 @@ namespace CaisseAutomatique.Model.Automate
         public Automate(Caisse metier)
         {
             this.metier = metier;
-            etat = new EtatAttenteClient(this.metier);
+            etat = new EtatAttenteClient(this.metier, this);
         }
 
         public void Activer(Evenement e)
         {
             this.etat.Action(e);
             this.etat = etat.Transition(e);
+            NotifyPropertyChanged("Message");
         }
 
         #region Notify
