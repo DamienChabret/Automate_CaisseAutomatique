@@ -13,12 +13,17 @@ namespace CaisseAutomatique.VueModel
     /// <summary>
     /// Vue-Model de la caisse automatique
     /// </summary>
-    public class VMCaisse
+    public class VMCaisse : INotifyPropertyChanged
     {
         /// <summary>
         /// Automate
         /// </summary>
         private Automate automate;
+
+        /// <summary>
+        /// Message de l'automate
+        /// </summary>
+        public string Message => automate.Message;
 
         /// <summary>
         /// La caisse automatique (couche métier)
@@ -35,6 +40,7 @@ namespace CaisseAutomatique.VueModel
         /// La caisse est-elle disponible pour un nouveau client
         /// </summary>
         private bool estDisponible;
+
         public bool EstDisponible 
         { 
             get => estDisponible;
@@ -180,5 +186,21 @@ namespace CaisseAutomatique.VueModel
         public void AnnuleTousLesArticles()
         {
         }
+
+        private void Automate_PropertyChanged(object? sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == "Message") this.NotifyPropertyChanged("Message");
+        }
+
+        #region Notify
+        /// <summary>
+        /// Evènement d'observation
+        /// </summary>
+        public event PropertyChangedEventHandler? PropertyChanged;
+        private void NotifyPropertyChanged([CallerMemberName] String propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        #endregion
     }
 }

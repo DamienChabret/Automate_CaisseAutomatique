@@ -13,6 +13,14 @@ namespace CaisseAutomatique.Model.Automate
     public abstract class Etat
     {
         /// <summary>
+        /// Message de l'état
+        /// </summary>
+        public abstract string Message
+        {
+            get;
+        }
+
+        /// <summary>
         /// Métier de l'état
         /// </summary>
         public Caisse Metier

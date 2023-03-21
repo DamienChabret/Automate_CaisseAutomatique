@@ -8,9 +8,9 @@ namespace CaisseAutomatique.Model.Automate.Etats
 {
     public class EtatAttenteClient : Etat
     {
-        public EtatAttenteClient(Caisse metier) : base(metier)
-        {
-        }
+        public override string Message => "Bonjour, scannez votre premier article !";
+
+        public EtatAttenteClient(Caisse metier) : base(metier) { }
 
         public override void Action(Evenement e)
         {

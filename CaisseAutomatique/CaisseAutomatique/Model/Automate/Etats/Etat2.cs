@@ -8,9 +8,9 @@ namespace CaisseAutomatique.Model.Automate.Etats
 {
     internal class Etat2 : Etat
     {
-        public Etat2(Caisse metier) : base(metier)
-        {
-        }
+        public override string Message => "Salut message !";
+
+        public Etat2(Caisse metier) : base(metier) { }
 
         public override void Action(Evenement e)
         {
