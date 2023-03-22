@@ -30,6 +30,7 @@ namespace CaisseAutomatique.Model.Automate
         {
             this.metier = metier;
             etat = new EtatAttenteClient(this.metier, this);
+            this.etat.PropertyChanged += EtatCourant_PropertyChanged;
         }
 
         public void Activer(Evenement e)
@@ -37,6 +38,16 @@ namespace CaisseAutomatique.Model.Automate
             this.etat.Action(e);
             this.etat = etat.Transition(e);
             NotifyPropertyChanged("Message");
+            if(e == Evenement.SCANNER) NotifyPropertyChanged("ScanArticleDenombrable");
+        }
+
+        /// <summary>
+        /// Pas sur 
+        /// </summary>
+        public void EtatCourant_PropertyChanged(object? sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == "ScanArticleDenombrable")
+                NotifyPropertyChanged("ScanArticleDenombrable");
         }
 
         #region Notify

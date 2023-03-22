@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -10,7 +11,7 @@ namespace CaisseAutomatique.Model.Automate
     /// <summary>
     /// Etat de l'automate
     /// </summary>
-    public abstract class Etat
+    public abstract class Etat : INotifyPropertyChanged
     {
         /// <summary>
         /// Message de l'état
@@ -33,6 +34,7 @@ namespace CaisseAutomatique.Model.Automate
         /// Automate
         /// </summary>
         private Automate automate;
+
         public Automate Automate
         {
             get => automate;
@@ -62,5 +64,12 @@ namespace CaisseAutomatique.Model.Automate
         public abstract void Action(Evenement e);
 
 
+        #region NOTIFY
+        public event PropertyChangedEventHandler? PropertyChanged;
+        protected void NotifyPropertyChanged([CallerMemberName] string propertyName = "")
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
+        #endregion
     }
 }

@@ -18,6 +18,7 @@ namespace CaisseAutomatique.Model.Automate.Etats
             {
                 case Evenement.SCANNER:
                     this.Metier.RegisterArticle();
+                    this.NotifyPropertyChanged("ScanArticleDenombrable");
                     break;
             }
         }

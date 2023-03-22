@@ -3,8 +3,11 @@
     "",
     "\\CaisseAutomatique",
     "\\CaisseAutomatique\\CaisseAutomatique",
+    "\\CaisseAutomatique\\CaisseAutomatique\\Model",
+    "\\CaisseAutomatique\\CaisseAutomatique\\Model\\Automate",
+    "\\CaisseAutomatique\\CaisseAutomatique\\Model\\Automate\\Etats",
     "\\CaisseAutomatique\\CaisseAutomatique\\Vue"
   ],
-  "SelectedNode": "\\CaisseAutomatique\\CaisseAutomatique\\Vue\\VueArticle.cs",
+  "SelectedNode": "\\CaisseAutomatique\\CaisseAutomatique\\Model\\Automate\\Etats\\EtatAttenteClient.cs",
   "PreviewInSolutionExplorer": false
 }

@@ -198,6 +198,10 @@ namespace CaisseAutomatique.VueModel
         private void Automate_PropertyChanged(object? sender, PropertyChangedEventArgs e)
         {
             if (e.PropertyName == "Message") this.NotifyPropertyChanged("Message");
+            if (e.PropertyName == "ScanArticleDenombrable")
+            {
+                this.OuvrirEcranSelectionQuantite();
+            };
         }
 
         #region Notify
