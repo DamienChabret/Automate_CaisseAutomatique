@@ -47,7 +47,7 @@ namespace CaisseAutomatique.VueModel
             set
             {
                 estDisponible = value;
-                //this.NotifyPropertyChanged();
+                this.NotifyPropertyChanged();
             }
         }
 
@@ -157,6 +157,7 @@ namespace CaisseAutomatique.VueModel
         public void SaisirNombreArticle(int nbArticle)
         {
             this.metier.SaisieQuantite(nbArticle);
+            this.automate.Activer(Evenement.SAISIEQUANTITE);
         }
 
         /// <summary>

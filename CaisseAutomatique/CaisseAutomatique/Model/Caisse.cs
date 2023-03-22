@@ -146,9 +146,13 @@ namespace CaisseAutomatique.Model
         /// <summary>
         /// Enregistre un article
         /// </summary>
-        public void RegisterArticle()
+        public void RegisterArticle(int quantiteSaisie = 1)
         {
-            this.articles.Add(this.DernierArticleScanne);
+            
+            for(int i = 0; i < quantiteSaisie; i++)
+            {
+                this.articles.Add(this.DernierArticleScanne);
+            }
             this.NotifyPropertyChanged("Articles");
         }
 

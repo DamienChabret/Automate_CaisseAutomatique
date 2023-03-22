@@ -29,7 +29,14 @@ namespace CaisseAutomatique.Model.Automate.Etats
             switch (e)
             {
                 case Evenement.SCANNER:
-                    etat = new EtatAttenteProduit(this.Metier, this.Automate);
+                    if (!this.Metier.DernierArticleScanne.IsDenombrable)
+                    {
+                        etat = new EtatAttenteProduit(this.Metier, this.Automate);
+                    }
+                    else
+                    {
+                        etat = new EtatQuantiteSaisie(this.Metier, this.Automate);
+                    }
                     break;
             }
             return etat;
