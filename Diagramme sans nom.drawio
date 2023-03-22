@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-22T14:57:11.242Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="prGtiBYv5_AOkBJBGVLD" version="21.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-22T15:15:06.890Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="8Mzh-9z7N4xyaLprXIyu" version="21.0.8" type="github">
   <diagram name="Page-1" id="FrZEBVQiNB3O1--vANm9">
-    <mxGraphModel dx="1434" dy="796" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="896" dy="498" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -125,10 +125,25 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="uK6mD8ll8SenhdR1JYFj-8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+        <mxCell id="uK6mD8ll8SenhdR1JYFj-9" value="Scaner produit&lt;br&gt;" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.558;exitY=-0.037;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" target="uK6mD8ll8SenhdR1JYFj-1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="370" y="150" as="sourcePoint" />
-            <mxPoint x="420" y="100" as="targetPoint" />
+            <mxPoint x="677" y="327" as="sourcePoint" />
+            <mxPoint x="436" y="192" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="120" />
+              <mxPoint x="610" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uK6mD8ll8SenhdR1JYFj-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.583;exitY=0.988;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="uK6mD8ll8SenhdR1JYFj-1" target="02MSICZf1UXUIeg_eWaf-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="140" as="sourcePoint" />
+            <mxPoint x="430" y="90" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uK6mD8ll8SenhdR1JYFj-12" value="QUANTITESAISIE&lt;br&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="uK6mD8ll8SenhdR1JYFj-10">
+          <mxGeometry x="-0.342" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
