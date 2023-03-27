@@ -60,6 +60,10 @@ namespace CaisseAutomatique.Model.Automate.Etats
                     }
                     
                     break;
+                case Evenement.INTERVENTION_ADMIN:
+                    etat = new EtatSessionAdmin(this.Metier, this.Automate);
+                    this.NotifyPropertyChanged("InterventionAdmin");
+                    break;
             }
             return etat;
         }

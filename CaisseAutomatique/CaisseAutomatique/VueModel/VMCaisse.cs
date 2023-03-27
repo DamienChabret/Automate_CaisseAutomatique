@@ -173,6 +173,7 @@ namespace CaisseAutomatique.VueModel
         /// </summary>
         public void DebutModeAdministration()
         {
+            OuvrirEcranAdministration();
         }
 
         /// <summary>
@@ -180,6 +181,7 @@ namespace CaisseAutomatique.VueModel
         /// </summary>
         public void FinModeAdministration()
         {
+            this.automate.Activer(Evenement.QUITTER_ADMINISTRATION);
         }
 
         /// <summary>
@@ -187,6 +189,7 @@ namespace CaisseAutomatique.VueModel
         /// </summary>
         public void AnnuleDernierArticle()
         {
+            this.automate.Activer(Evenement.ANNULER_DERNIERARTICLE);
         }
 
         /// <summary>
@@ -194,15 +197,25 @@ namespace CaisseAutomatique.VueModel
         /// </summary>
         public void AnnuleTousLesArticles()
         {
+            this.automate.Activer(Evenement.ANNULER_COMMANDE);
         }
 
         private void Automate_PropertyChanged(object? sender, PropertyChangedEventArgs e)
         {
+            // Message changé
             if (e.PropertyName == "Message") this.NotifyPropertyChanged("Message");
+
+            // Scan article dénombrable
             if (e.PropertyName == "ScanArticleDenombrable")
             {
                 this.OuvrirEcranSelectionQuantite();
-            };
+            }
+
+            // Intervention admin
+            if (e.PropertyName == "InterventionAdmin") 
+            {
+                this.OuvrirEcranAdministration();
+            }
         }
 
         #region Notify

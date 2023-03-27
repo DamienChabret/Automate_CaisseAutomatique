@@ -16,6 +16,10 @@ namespace CaisseAutomatique.Model.Automate
         PAYER,
         RESET,
         ENLEVER,
-        SAISIEQUANTITE
+        SAISIEQUANTITE,
+        INTERVENTION_ADMIN,
+        ANNULER_COMMANDE,
+        ANNULER_LASTARTICLE,
+        QUITTER_ADMINISTRATION
     }
 }

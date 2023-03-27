@@ -157,6 +157,14 @@ namespace CaisseAutomatique.Model
         }
 
         /// <summary>
+        /// Annule le dernier article enregistré
+        /// </summary>
+        public void CancelLastArticle()
+        {
+            this.articles.Remove(this.dernierArticleScanne);
+        }
+
+        /// <summary>
         /// Pattern d'observable
         /// </summary>
         public event PropertyChangedEventHandler? PropertyChanged;
