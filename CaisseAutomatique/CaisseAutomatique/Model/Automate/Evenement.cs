@@ -19,7 +19,7 @@ namespace CaisseAutomatique.Model.Automate
         SAISIEQUANTITE,
         INTERVENTION_ADMIN,
         ANNULER_COMMANDE,
-        ANNULER_LASTARTICLE,
+        ANNULER_DERNIERARTICLE,
         QUITTER_ADMINISTRATION
     }
 }
