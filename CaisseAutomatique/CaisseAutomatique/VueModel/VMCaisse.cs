@@ -173,7 +173,7 @@ namespace CaisseAutomatique.VueModel
         /// </summary>
         public void DebutModeAdministration()
         {
-            OuvrirEcranAdministration();
+            this.automate.Activer(Evenement.INTERVENTION_ADMIN);
         }
 
         /// <summary>
