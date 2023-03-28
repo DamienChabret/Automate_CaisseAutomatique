@@ -17,7 +17,14 @@ namespace CaisseAutomatique.Model.Automate.Etats
             switch (e)
             {
                 case Evenement.SCANNER:
-                    this.Metier.RegisterArticle();
+                    if (this.Metier.DernierArticleScanne.IsDenombrable) // Dénombrable
+                    {
+                        this.NotifyPropertyChanged("ScanArticleDenombrable");
+                    }
+                    else // pas dénombrable
+                    {
+                        this.Metier.RegisterArticle();
+                    }
                     break;
                 case Evenement.PAYER:
                     this.Metier.ResetProduit();
@@ -27,6 +34,9 @@ namespace CaisseAutomatique.Model.Automate.Etats
                     break;
                 case Evenement.POSER:
                     // no-op
+                    break;
+                case Evenement.INTERVENTION_ADMIN:
+                    this.NotifyPropertyChanged("InterventionAdmin");
                     break;
             }
         }
@@ -62,7 +72,6 @@ namespace CaisseAutomatique.Model.Automate.Etats
                     break;
                 case Evenement.INTERVENTION_ADMIN:
                     etat = new EtatSessionAdmin(this.Metier, this.Automate);
-                    this.NotifyPropertyChanged("InterventionAdmin");
                     break;
             }
             return etat;

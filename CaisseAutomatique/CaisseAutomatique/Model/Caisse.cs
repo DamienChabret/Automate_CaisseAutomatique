@@ -161,7 +161,10 @@ namespace CaisseAutomatique.Model
         /// </summary>
         public void CancelLastArticle()
         {
-            this.articles.Remove(this.dernierArticleScanne);
+            if(this.articles.Count > 0)
+            {
+                this.articles.RemoveAt(this.articles.Count - 1);
+            }
         }
 
         /// <summary>

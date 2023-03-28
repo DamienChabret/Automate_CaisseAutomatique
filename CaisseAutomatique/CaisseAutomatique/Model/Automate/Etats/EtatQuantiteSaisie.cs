@@ -37,7 +37,7 @@ namespace CaisseAutomatique.Model.Automate.Etats
                 case Evenement.SAISIEQUANTITE:
                     etat = new EtatAttenteProduit(this.Metier, this.Automate);
                     break;
-                
+
             }
             return etat;
         }

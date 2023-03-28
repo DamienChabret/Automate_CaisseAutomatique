@@ -33,7 +33,15 @@ namespace CaisseAutomatique.Model.Automate.Etats
             switch (e)
             {
                 case Evenement.QUITTER_ADMINISTRATION:
-                    etat = new EnregistreProduit(this.Metier, this.Automate);
+                    // Vérifie que le poids est le bon
+                    if (this.Metier.PoidsAttendu == this.Metier.PoidsBalance)
+                    {
+                        etat = new EnregistreProduit(this.Metier, this.Automate);
+                    }
+                    else
+                    {
+                        etat = new EtatProblemeProduit(this.Metier, this.Automate);
+                    }
                     break;
             }
             return etat;

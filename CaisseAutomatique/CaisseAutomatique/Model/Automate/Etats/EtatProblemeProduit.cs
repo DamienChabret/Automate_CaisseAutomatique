@@ -24,6 +24,9 @@ namespace CaisseAutomatique.Model.Automate.Etats
                 case Evenement.ENLEVER:
                     // no-op
                     break;
+                case Evenement.INTERVENTION_ADMIN:
+                    this.NotifyPropertyChanged("InterventionAdmin");
+                    break;
             }
         }
 
@@ -45,6 +48,9 @@ namespace CaisseAutomatique.Model.Automate.Etats
                     {
                         etat = new EtatAttenteClient(this.Metier, this.Automate);
                     }
+                    break;
+                case Evenement.INTERVENTION_ADMIN:
+                    etat = new EtatSessionAdmin(this.Metier, this.Automate);
                     break;
             }
             return etat;

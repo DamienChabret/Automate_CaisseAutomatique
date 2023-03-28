@@ -22,6 +22,11 @@ namespace CaisseAutomatique.Model.Automate
             get => this.etat.Message;
         }
 
+        public Etat EtatCourant
+        {
+            get => etat;
+        }
+
         /// <summary>
         /// Constructeur de l'automate
         /// </summary>
@@ -37,8 +42,8 @@ namespace CaisseAutomatique.Model.Automate
         {
             this.etat.Action(e);
             this.etat = etat.Transition(e);
+            this.etat.PropertyChanged += EtatCourant_PropertyChanged;
             NotifyPropertyChanged("Message");
-            if(e == Evenement.SCANNER) NotifyPropertyChanged("ScanArticleDenombrable");
         }
 
         /// <summary>
@@ -48,6 +53,8 @@ namespace CaisseAutomatique.Model.Automate
         {
             if (e.PropertyName == "ScanArticleDenombrable")
                 NotifyPropertyChanged("ScanArticleDenombrable");
+            if(e.PropertyName == "InterventionAdmin")
+                NotifyPropertyChanged("InterventionAdmin");
         }
 
         #region Notify
